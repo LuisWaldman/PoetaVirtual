@@ -1,0 +1,46 @@
+﻿body
+{
+}
+
+.clase {
+    display: block;
+    color: red;
+}
+.cssPoema {
+    display: flex;
+    flex-direction: column;
+}
+.cssVerso {
+    display: flex;
+    flex-direction: row;
+}
+
+.totalsilabas {
+    width: 150px;
+}
+
+.clsRimas {
+    display: flex;
+    flex-direction: row;
+}
+
+.clsRima {
+    display: block;
+    width: 80px;
+    border: 1px solid;
+    padding: 5px;
+
+}
+
+
+.clsPanel {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnPanel {
+    display: block;
+    width: 80px;
+    border: 1px solid;
+    padding: 5px;
+}
