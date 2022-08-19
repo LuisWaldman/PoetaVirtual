@@ -2,24 +2,22 @@
 let Datos =
 {
     resumen: { 
-        total_versos: 3
+        total_versos: 0
     },
     seleccion_carpetaid: 0,
     seleccion_poemaid: 0,
-    rimaconsonante: false,
     poemario: [],
     titulo: "",
     poema: "",
     versos: [],
     rimas: [],
     rimas_asonantes: [],
-
+    letras: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+    'A2', 'B2', 'C2', 'D2', 'E2', 'F2', 'G2', 'H2', 'I2', 'J2', 'K2', 'L2', 'M2', 'N2', 'O2', 'P2', 'Q2', 'R2', 'S2', 'T2', 'U2', 'V2', 'W2', 'X2', 'Y2', 'Z2'],
+    rimaconsonante: false,
+    colorInicial: '#f8f4fa',
+    colorFinal: '#b488f2',
 }
-
-var letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-
-
-
 
 Datos.poemario = Poemario;
 
@@ -32,11 +30,11 @@ function letrarima(rima)
 {
     for (let i = 0; i < Datos.rimas.length; i++)
         if (Datos.rimas[i] == rima)
-            return letras[i];
+            return i;
     var id = Datos.rimas.length;
     Datos.rimas[id] = rima;
 
-    return letras[id];
+    return id;
 }
 
 function obtenerrima_asonante(rima)
@@ -70,14 +68,12 @@ function letrarima_asonante(rima)
 {
     var rima_asonante = obtenerrima_asonante(rima);
 
-
-
     for (let i = 0; i < Datos.rimas_asonantes.length; i++)
         if (Datos.rimas_asonantes[i] == rima_asonante)
-            return letras[i];
+            return i;
     var id = Datos.rimas_asonantes.length;
     Datos.rimas_asonantes[id] = rima_asonante;
-    return letras[id];
+    return id;
 }
 
 
@@ -86,10 +82,48 @@ function letrarima_asonante(rima)
 
 let controlador = {
 
+    componentToHex(c) {
+        var hex = c.toString(16);
+        return hex.length == 1 ? "0" + hex : hex;
+      },
+      
+      rgbToHex(r, g, b) {
+        return "#" + this.componentToHex(r) + this.componentToHex(g) + this.componentToHex(b);
+      },
+      
+
+    hexToRgb(hex) {
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+          r: parseInt(result[1], 16),
+          g: parseInt(result[2], 16),
+          b: parseInt(result[3], 16)
+        } : null;
+    },
+    ValorMedio(De, A, PasoNro, TotalPasos)
+    {
+        var Dif = A - De;
+        return De + parseInt(((parseFloat(Dif) / parseFloat(TotalPasos)) * parseFloat(PasoNro)));
+    },
+
+    ColorMedio(DeColor, AColor, PasoNro, TotalPasos) 
+    {
+        var desdeRGB = this.hexToRgb(DeColor);
+        var aRGB = this.hexToRgb(AColor);
+        var medioR = this.ValorMedio(desdeRGB.r, aRGB.r, PasoNro, TotalPasos);
+        var medioG = this.ValorMedio(desdeRGB.g, aRGB.g, PasoNro, TotalPasos);
+        var medioB = this.ValorMedio(desdeRGB.b, aRGB.b, PasoNro, TotalPasos);
+        return this.rgbToHex(medioR, medioG, medioB);
+
+    },
+
     CalcularPoema() {
         
         Datos.rimas = [];
         Datos.rimas_asonantes = [];
+        var newresumen = {
+            total_versos: 0
+        }
 
         Datos.versos = [];
         let ultimo_espacio = ' ';
@@ -157,12 +191,16 @@ let controlador = {
             ultimapalabra = nuevoVerso.palabras[nuevoVerso.palabras.length - 1];
             if (ultimapalabra)
             {
+                newresumen.total_versos = newresumen.total_versos + 1; 
                 ultimasilaba = ultimapalabra.silabas[ultimapalabra.silabas.length - 1];
+
                 nuevoVerso.rima = letrarima(ultimasilaba.silaba);
                 nuevoVerso.rima_asonante = letrarima_asonante(ultimasilaba.silaba);
             }
             Datos.versos[Datos.versos.length] = nuevoVerso;
         }
+
+        Datos.resumen = newresumen;
     }
 };
 controlador.CalcularPoema();
@@ -180,6 +218,11 @@ let app = new Vue({
             Datos.poema = '';
             controlador.CalcularPoema();
         },
+        Modifico_Verso: function()
+        {
+            
+
+        },
         cambio_poema: function() 
         {
             var miPoema = Datos.poemario[Datos.seleccion_carpetaid].poemas[Datos.seleccion_poemaid];
@@ -194,7 +237,38 @@ let app = new Vue({
             this.cambio_poema();
 
         },
-        estiloVerso: function(verso) {
+
+        estiloVerso: function(verso) 
+        
+        {
+
+            var rimaid = 0;
+            var total_rimas = 0;
+            if (Datos.rimaconsonante)
+            {
+                rimaid = verso.rima;
+                total_rimas = Datos.rimas.length;
+            }
+            else
+            {
+                rimaid = verso.rima_asonante;
+                total_rimas = Datos.rimas_asonantes.length;
+            }
+            
+
+
+            var backgroungcolor = '';
+
+
+            backgroungcolor = controlador.ColorMedio(Datos.colorInicial, Datos.colorFinal, rimaid, total_rimas);
+
+
+            var retEstilo = {
+                'background-color': backgroungcolor
+            };
+            return retEstilo;
+        },
+        estiloTotalSilabas: function(verso) {
             var color = '';
             var borde = '';
 
