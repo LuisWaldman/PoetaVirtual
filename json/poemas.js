@@ -114,8 +114,17 @@ rimaconsonante: true,
   },
   { titulo: "Paloma",
      poema: "mi vida fuímos a volar\ncon un solo paracaídas\nuno sólo va aquedar\nvolando a la deriva\nvivir así no es vivír\nesperando y esperando\nporque vivir es jugar\ny yo quiero seguir jugando\nle dije a mi corazón\nsin gloria pero sin pena\nno cometas el crimen, varón\nsi no vas a cumplir la condena\nquiero vivir dos veces\npara poder olvidarte\nquiero llevarte conmigo\ny no voy a ninguna parte\nno te preocupes, Paloma\nhoy no estoy adentro mío\ntu amor es mi enfermedad\nsoy un envase vacío\n- estribillo -\nno te preocupes Paloma\nno hay pájaros en el nido\ndos ilusiones se irán a volar\npero otras dos han venido\nsi me olvido de vivir\ncolgado de sentimientos\nvoy a vivir para repetir otra vez\neste momento\nte bajaría del cielo, mujer\nla luna hasta tu cama\nporque es muy poco de amor\nsólo una vez por semana\npuse precio a mi libertad\ny nadie quiso pagarlo\nte cambio tu corazón por el mío\npara mirarla y mirarla\nAmpas de gloria, mujer\nquiero un pedazo de cielo\npara invitarte a dormir\ncon pappo y miguel abuelo\nun sacrificio ritual bien o mal\nyo quiero hacerle a mi estrella\nsin principio ni final\nno puedo vivir sin ella",
-     rimaconsonante: true,
+     rimaconsonante: true
+  },
+  {
+   titulo: "Jugar con Fuego",
+   poema: "Yo tengo cuatro claveles\nUno por cada motivo\nEl encuentro, tu mirada\nMi secreto, nuestro olvido\nEstoy jugando con fuego\nY en la yema de los dedos\nTengo el tacto de los días\nTengo el tacto de las noches\nTengo el tacto de los dos\nEs inmoral sentirse mal\nPor haber querido tanto\nDebería estar prohibido\nHaber vivido\nY no haber amado\nPor eso tírame un beso\nQue sigo preso\nDe nuestro encierro\nJugar con fuego\nSi me quedé sin aliento\nY no pude dar contigo\nVa a venir la noche negra\nPara quedarse conmigo\nPorque jugando con fuego\nPuede ser que te lastimes\nPuede ser que te lastime\nPuede ser que sufra un poco\nY nos quememos los dos\nEs inmoral sentirse mal\nPor haber querido tanto\nDebería estar prohibido\nHaber vivido\nY no haber amado\nPor eso tírame un hueso\nQue sigo preso\nDe nuestro encierro\nJugar con fuego\nY muy juntitos los dos",
+   rimaconsonante: false
+
   }
+
+
+
 ]
 },
 {
@@ -266,145 +275,51 @@ rimaconsonante: true,
 { titulo: "La plaza tiene una torre",
 poema: "La plaza tiene una torre,\nLa torre tiene un balcón,\nel balcón tiene una dama,\nla dama una blanca flor.\n\nHa pasado un caballero\n¡quién saber por qué pasó!\ny se ha llevado la plaza,\ncon su torre y su balcón,\ncon su balcón y su dama,\nsu dama y su blanca flor.",
 rimaconsonante: true,
-}
-]
-},
-{
-    "nombre_carpeta": "Antonio Machado",
-    "poemas": 
-    
-    [
-     { titulo: "Nuevo",
-     poema: "",
-     rimaconsonante: true,
-  },
-  { titulo: "Nuevo",
-  poema: "",
-  rimaconsonante: true,
-  },
- { titulo: "Nuevo",
-   poema: "",
-  rimaconsonante: true,
-},
-{ titulo: "Nuevo",
-poema: "",
+},{ titulo: "Caminante no hay camino",
+poema: "Caminante, son tus huellas\nel camino y nada más;\nCaminante, no hay camino,\nse hace camino al andar.\nAl andar se hace el camino,\ny al volver la vista atrás\nse ve la senda que nunca\nse ha de volver a pisar.\nCaminante no hay camino\nsino estelas en la mar.",
 rimaconsonante: true,
+},{ titulo: "Amada, el aura dice...",
+poema: "Amada, el aura dice\ntu pura veste blanca...\nNo te verán mis ojos;\n¡mi corazón te aguarda!\nEl viento me ha traído\ntu nombre en la mañana;\nel eco de tus pasos\nrepite la montaña...\nno te verán mis ojos;\n¡mi corazón te aguarda!\nEn las sombrías torres\nrepican las campanas...\nNo te verán mis ojos;\n¡mi corazón te aguarda!\nLos golpes del martillo\ndicen la negra caja;\ny el sitio de la fosa,\nlos golpes de la azada...\nNo te verán mis ojos;\n¡Mi corazón te aguarda!",
+rimaconsonante: false,
 },
-{ titulo: "Nuevo",
-poema: "",
+{ titulo: "Consejos",
+poema: "Este amor que quiere ser\nacaso pronto será;\npero ¿cuándo ha de volver\nlo que acaba de pasar?\nHoy dista mucho de ayer.\n¡Ayer es Nunca jamás!\nMoneda que está en la mano\nquizá se deba guardar:\nla monedita del alma\nse pierde si no se da.",
 rimaconsonante: true,
 }
 ]
 },
 {
-    "nombre_carpeta": "Antonio Machado",
+    "nombre_carpeta": "Joaquin Sabina",
     "poemas": 
     
     [
-     { titulo: "Nuevo",
-     poema: "",
+     { titulo: "Puntos Suspensivos",
+     poema: "Lo peor del amor, cuando termina,\nson las habitaciones ventiladas,\nel solo de pijamas con sordina,\nla adrenalina en camas separadas.\n\nLo malo del después son los despojos\nque embalsaman los pájaros del sueño,\nlos teléfonos que hablan con los ojos,\nel sístole sin diástole ni dueño.\n\nLo más ingrato es encalar la casa,\nremendar las virtudes veniales,\ncondenar a galeras los archivos.\n\nLo atroz de la pasión es cuando pasa,\ncuando, al punto final de los finales,\nno le siguen dos puntos suspensivos",
      rimaconsonante: true,
   },
-  { titulo: "Nuevo",
-  poema: "",
+  { titulo: "Aves de Paso",
+  poema: "A las peligrosas rubias de bote \nque en el relicario de sus escotes \nperfumaron mi juventud.\n\nAl milagro de los besos robados \nque en el diccionario de mis pecados \nguardaron su petalo azul.\n\nA la impudica niñera madura \nque en el mapamundi de su cintura \nal niño que fui espabilo.\n\nA la flor de lis de las peluqueras \nque me trajo el tren de la primavera\ny el tren del invierno me arrebato.\n\nA las flores de un dia que no duraban, \nque no dolian, que te besaban, que se perdian.\n\nDamas de noche \nque en el asiento de atras \nde un coche no preguntaban si las querias.\n\nAves de paso como pañuelos cura fracasos.\nA la misteriosa vuida de luto \nque sudo conmigo un minuto \ntres pisos en ascensor.\n\nA la intrepido cholula argentina \nque en el corazon con tinta china \nme tatuo un peor para el sol.\n\nA las cosquivanas novias de nadie \nque coleccionaban canas al aire \nburlon de la nit de Sant Joan.\n\na la reina de los bares del puerto \nque una noche despues de un concierto \nme abrio su almacen \nde besos con sal.\n\nA las flores de un dia que no duraban, \nque no dolian, que te besaban, que se perdian.\nDamas de noche \nque en el asiento de atras de un coche \nno preguntaban si las querias.\nAves de paso como pañuelos cura fracasos.\n\nA Justine, a Marylin, a Jimena, \na la Mata-Hari, a la Magdalena, \na Fatima y a Salome.\n\nA los ojos verdes como aceitunas \nque robaban la luz de la luna de miel\nde un cuarto de hotel, dulce hotel.",
   rimaconsonante: true,
   },
- { titulo: "Nuevo",
-   poema: "",
+ { titulo: "Mas larga que pinocho",
+   poema: "Caballero en edad de merecer,\ncon un pelo de tonto, cuatro canas\nel pasado resuelto y muchas ganas\nya sabe usted de que.\nInformal, ilustrado, manejable\nmas amigo de gatos que de perros.\nCon dos pulseras y una inexplicable\nmala salud de hierro.\nSolicita con fines poco serios\nseñora aficionada al adulterio\no señorita de entre quince y cuarenta\n(si no los aparenta).\nLas cartas a República Española,\nhoy Avenida Juan Carlos Primero.\ncon foto que prefiero de cuerpo entero y sola\na vuelta de correo ira la mía\ncon traje gris y mas chulo que un ocho\nporque la tengo, como le diría\n\nmas larga que Pinocho\nSe acercan feministas sin pancarta\no Dulcineas enamoradas del amor\no pesimistas hartas de estar hartas\nde decirme que no.\nIgual me da mujer de mala nota,\nespecialistas en Borges y la cama\nsi no vienen tocándome\ncon Juan Salvador las pelotas.\nDispuesto a todo incluso a defraudarte,\nalérgico al deporte y al reto\ncon un precoz talento para el arte de la eyaculación.\nLas cartas, a Calle Melancolía,\nhoy travesía al bar Esther Manzano,\ncon dos fotografías del ultimo verano,\na vuelta de correo ira la mía,\ndonde aunque pálido y flaco destaco\npor tenerla mas larga todavía\nque un lunes sin tabaco\n",
   rimaconsonante: true,
 },
-{ titulo: "Nuevo",
-poema: "",
+{ titulo: "No permita la virgen que tengas poder",
+poema: "No permita la virgen que tengas poder\nsobre lágrimas, egos, haciendas,\ncuando labios sin ánima quieran querer\nte al contado liquida la tienda.\nNo te pases un pelo de listo, no invier-\ntas en cristos, no te hagas el tonto,\nlas hogueras a primera vista cuché\nde revista, se apagan bien pronto.\nEl caballo de Atila no sabe trotar\nsin hollar azulejos silvestres,\nlos vencejos con ánimo de molestar\ncoleccionan estatuas ecuestres.\nCosas de quita y pon, mariposas de sangre marrón,\ncarnavales en los arrabales de mi corazón.\nLa belleza es un rabo de nube\nque sube de dos en dos las escaleras,\nun carné exclusivo de socio\ndel pingüe negocio de la primavera,\nun barril de cerveza que mata de sed,\nun melón con pezón de sandía,\nun espía enemigo, un contigo al revés,\nun ombligo de bisutería.\n\nCosas de quita y pon, mariposas de sangre marrón,\nno me quieras querer, no me quieras matar, corazón.\nCosas de quita y pon, mariposas de sangre marrón,\ncardenales en los funerales de mi corazón.\nNo permita la virgen que tengas poder.\n\n",
 rimaconsonante: true,
 },
-{ titulo: "Nuevo",
-poema: "",
+{ titulo: "Peor para el sol",
+poema: "¿Que adelantas sabiendo mi nombre?\nCada noche tengo uno distinto\ny siguiendo la voz del instinto\nme lanzo a buscar\nImagino,preciosa que un hombre\nalgo mas ,un amante discreto\nque se atreva a perderme el respeto\n¿no quieres probar...?\nVivo justo detras de la esquina\nNo me acuerdo si tengo marido\nsi me quitas con arte el vestido\nte invito un champán......\nle solte al barman mil propinas\napure la cerveza de un sorbo\n(acerto quien \"El templo del morbo\"\nle puso a este bar.)\nPeor para el sol\nque se mete a las siete en la cuna\ndel mar a roncar\nmientras un servidor\nle levanta la falda a la Luna.\nAl llegar al portal nos buscamos\ncomo dos estudiantes en celo\nun piso antes del septimo cielo\nse abrio el ascensor\nNos sirvio para el ultimo gramo\nel cristal de tu foto de boda\nno faltó ni el desfile de moda\nde ropa interior\nEn mi casa ni hay nada prohibido\npero no vayas a enamorarte\ncon el alba tendras que marcharte\npara no vover,\nolvidando que me has conocido\nque una vez estuviste en la cama\nhay caprichos de amor que una dama\nno debe tener\nEs mejor ,le pedí que te calles\nno me gusta intervenir en quimeras\nme han traido hasta aqui tus caderas\nno tu corazón.....\ny despues ¿para que mas detalles?\nya sabeis...copas risas,excesos\n¿Cómo van a caber tantos besos\nen una canción?\nVolví al bar a la noche siguiente\na brindar con su silla vacía\nme pedí una cerveza bien fría\ny entonces no sé\nsi soñe o era tuya la ardiente\nvoz que me hiba diciendo al oído\n\"me moria de ganas querido\nde verte otra vez",
+rimaconsonante: true,
+},
+{ titulo: "Yo tambien se jugarme la boca",
+poema: "Era un pez con mejores caderas del mar de la moda\nse dejaba sobar por cualquiera incluyendome a mi\nsus palabras decian de memoria lo que todas decian\nsus pestañas contaban historias para no dormir\n\nyo era el ultimo mono o un imnoble miron solitario\nen las bodas algun pasodoble , de suelto ni hablar\nel perfume tabu de chanel y el cubata de larios\nno acostumbran buscarse un motel si les cierran el bar\nporque siempre hubo clases y yo soy el hombre invisible\n\nque una noche soño un imposible parecido al amor\nporque el mundo es injusto chaval pero si me provocan \nyo tambien se jugarme la boca, yo tambien se besar\n\ncompartimos la misma toalla, distintos sudores\ntodavia quedan islas con playas color azafran\nfui su medio limon , su cherie, su peor latin lover\nsu leccion de español su desliz, su comesi comesa\npero un dia quitaron las mesas y hasta otro verano\nlas mejores promesas son esas que no hay que cumplir\ny viajeros al tren que nos vamos, me dijo un milano\nflaco, portate bien y au revoir buena suerte en paris\nporque siempte hubo clases y yo no doy bien de marido\n",
 rimaconsonante: true,
 }
 ]
 },
 {
-    "nombre_carpeta": "Antonio Machado",
-    "poemas": 
-    
-    [
-     { titulo: "Nuevo",
-     poema: "",
-     rimaconsonante: true,
-  },
-  { titulo: "Nuevo",
-  poema: "",
-  rimaconsonante: true,
-  },
- { titulo: "Nuevo",
-   poema: "",
-  rimaconsonante: true,
-},
-{ titulo: "Nuevo",
-poema: "",
-rimaconsonante: true,
-},
-{ titulo: "Nuevo",
-poema: "",
-rimaconsonante: true,
-}
-]
-},
-{
-    "nombre_carpeta": "Antonio Machado",
-    "poemas": 
-    
-    [
-     { titulo: "Nuevo",
-     poema: "",
-     rimaconsonante: true,
-  },
-  { titulo: "Nuevo",
-  poema: "",
-  rimaconsonante: true,
-  },
- { titulo: "Nuevo",
-   poema: "",
-  rimaconsonante: true,
-},
-{ titulo: "Nuevo",
-poema: "",
-rimaconsonante: true,
-},
-{ titulo: "Nuevo",
-poema: "",
-rimaconsonante: true,
-}
-]
-},
-    {
-        "nombre_carpeta": "Antonio Machado",
-        "poemas": 
-        
-        [
-         { titulo: "Nuevo",
-         poema: "",
-         rimaconsonante: true,
-      },
-      { titulo: "Nuevo",
-      poema: "",
-      rimaconsonante: true,
-      },
-     { titulo: "Nuevo",
-       poema: "",
-      rimaconsonante: true,
-},
-{ titulo: "Nuevo",
-poema: "",
-rimaconsonante: true,
-},
-{ titulo: "Nuevo",
-poema: "",
-rimaconsonante: true,
-}
-]
-    },
-    {
         "nombre_carpeta": "Propios",
         "poemas": 
         
