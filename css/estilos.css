@@ -1,6 +1,7 @@
-﻿body
-{
+﻿#miApp {
+    margin: 15px;
 }
+
 
 .clase {
     display: block;
@@ -44,3 +45,4 @@
     border: 1px solid;
     padding: 5px;
 }
+

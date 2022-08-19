@@ -1,7 +1,13 @@
 // JavaScript source code
 let Datos =
 {
-    poemas: [],
+    resumen: { 
+        total_versos: 3
+    },
+    seleccion_carpetaid: 0,
+    seleccion_poemaid: 0,
+    rimaconsonante: false,
+    poemario: [],
     titulo: "",
     poema: "",
     versos: [],
@@ -11,7 +17,16 @@ let Datos =
 }
 
 var letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-Datos.poema = localStorage[1];
+
+
+
+
+Datos.poemario = Poemario;
+
+var miPoema = Datos.poemario[Datos.seleccion_carpetaid].poemas[Datos.seleccion_poemaid];
+Datos.poema = miPoema.poema;
+Datos.titulo = miPoema.titulo;
+Datos.rimaconsonante = miPoema.rimaconsonante;
 
 function letrarima(rima)
 {
@@ -151,6 +166,9 @@ let controlador = {
     }
 };
 controlador.CalcularPoema();
+
+
+
 let app = new Vue({
     el: '#miApp',
     data: Datos,
@@ -161,6 +179,58 @@ let app = new Vue({
         borrar_panel: function () {
             Datos.poema = '';
             controlador.CalcularPoema();
-        }
+        },
+        cambio_poema: function() 
+        {
+            var miPoema = Datos.poemario[Datos.seleccion_carpetaid].poemas[Datos.seleccion_poemaid];
+            Datos.poema = miPoema.poema;
+            Datos.titulo = miPoema.titulo;
+            Datos.rimaconsonante = miPoema.rimaconsonante;
+            controlador.CalcularPoema();
+            this.$forceUpdate();
+        },
+        cambio_carpeta: function() {
+            Datos.seleccion_poemaid = 0;
+            this.cambio_poema();
+
+        },
+        estiloVerso: function(verso) {
+            var color = '';
+            var borde = '';
+
+            var real_silabas = verso.total_silabas + verso.acento; 
+
+            if (real_silabas == 8)
+            {
+                
+                color = 'green';
+                borde = 'solid 1px ' + color;
+
+            }
+
+            
+            if (real_silabas == 11)
+            {
+                
+                color = 'green';
+                borde = 'solid 1px ' + color;
+
+            }
+
+
+
+            var retEstilo = {
+                color: color,
+                border: borde
+            };
+            return retEstilo;
+        },
     }
 })
+
+
+function mostrarPeoma()
+{
+    console.log(JSON.stringify(Datos.poema));
+    
+}
