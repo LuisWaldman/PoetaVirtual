@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"  ng-app>
 <head>
@@ -49,20 +49,24 @@
         <div class="row">
             <div class="col-md-6">
 
-
                 <textarea id="poema" v-model="poema" v-on:keyup="calcularPoema" style="width: 100%; height: 300px;"></textarea>
                 
                 <div class="clsRimas row" v-if="rimaconsonante">
-                    <div class="clsRima" v-for="rima in rimas">
+                    <div class="clsRima"><input type="color" v-model="colorInicial"></div>
+                    <div class="clsRima" v-for="(rima, rimaid) in rimas">
 
                         <a target="_blank" v-bind:href="'https://www.cronopista.com/dict-fe/#' + rima + '/I/c/R/I/I/1'">
                             {{ rima }}
                         </a>
 
                     </div>
+                    <div class="clsRima"><input type="color" v-model="colorFinal"></div>
+                    
                 </div>
 
                 <div class="clsRimas row"  v-if="!rimaconsonante">
+                    <div class="clsRima"><input type="color" v-model="colorInicial"></div>
+                    
                     <div class="clsRima" v-for="rima in rimas_asonantes">
 
                         <a target="_blank" v-bind:href="'https://www.cronopista.com/dict-fe/#' + rima + '/I/c/R/I/I/1'">
@@ -70,6 +74,8 @@
                         </a>
 
                     </div>
+                    <div class="clsRima"><input type="color" v-model="colorFinal"></div>
+                    
                 </div>
 
 
@@ -80,14 +86,14 @@
 
 
                 <div class="cssPoema">
-                    <div v-for="verso in versos" class="cssVerso">
+                    <div v-for="verso in versos" v-bind:style="estiloVerso(verso)" class="cssVerso">
 
 
-                        <span class="totalsilabas" v-if="(verso.total_silabas > 0) && (!rimaconsonante)"> {{ verso.rima_asonante }}</span>
-                        <span class="totalsilabas" v-if="(verso.total_silabas > 0) && (rimaconsonante)">  {{ verso.rima }}</span>
 
-                        <span class="totalsilabas" v-bind:style="estiloVerso(verso)" v-if="verso.acento == 0 && verso.total_silabas > 0"> {{ verso.total_silabas }} </span>
-                        <span class="totalsilabas"  v-bind:style="estiloVerso(verso)" v-if="verso.acento != 0"> {{ verso.total_silabas + verso.acento }} = {{ verso.total_silabas }} + {{ verso.acento  }} </span>
+                        <span class="totalsilabas" v-bind:style="estiloTotalSilabas(verso)" v-if="verso.acento == 0 && verso.total_silabas > 0">
+                             {{ verso.total_silabas }} 
+                            </span>
+                        <span class="totalsilabas"  v-bind:style="estiloTotalSilabas(verso)" v-if="verso.acento != 0"> {{ verso.total_silabas + verso.acento }} = {{ verso.total_silabas }} + {{ verso.acento  }} </span>
                         
                         <template v-for="(palabra, idpalabra) in verso.palabras">
                             <span v-for="(silaba, nums) in palabra.silabas">
@@ -98,6 +104,8 @@
                             <span v-if="verso.espacios[idpalabra] == '_'">_</span>
                         </template>
 
+                        <span class="totalsilabasrima" v-if="(verso.total_silabas > 0) && (!rimaconsonante)"> {{ letras[verso.rima_asonante] }}</span>
+                        <span class="totalsilabasrima" v-if="(verso.total_silabas > 0) && (rimaconsonante)">  {{ letras[verso.rima] }}</span>
                         &nbsp;
                     </div>
 
